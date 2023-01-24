@@ -7,8 +7,8 @@ pipeline {
                     sh 'echo hello'
                 }
 
-                timeout(time: 3, unit: 'SECONDS') {
-                    sh 'sleep 2'
+                timeout(time: 2, unit: 'MINUTES') {
+                    sh 'sleep 1'
                 }
             }
         }
